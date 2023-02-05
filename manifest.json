@@ -1,0 +1,16 @@
+{
+    "name": "Engoo Daily",
+    "short_name": "EngooD",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://engoo.com/app/daily-news/article*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

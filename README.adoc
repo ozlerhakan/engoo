@@ -1,0 +1,3 @@
+= Engoo Daily News Chrome Extension
+
+The extension highlightes the vocabularies explaining in the vocabulary section on the context.
