@@ -3,11 +3,15 @@
     "short_name": "EngooD",
     "version": "0.0.1",
     "manifest_version": 3,
+    "permissions": [
+        "webNavigation"
+    ],
     "content_scripts": [
         {
             "matches": [
-                "https://engoo.com/app/daily-news/article*"
+                "https://engoo.com/app/*"
             ],
+            "run_at": "document_end",
             "js": [
                 "content.js"
             ]
