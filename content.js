@@ -14,7 +14,7 @@ window.onload = function () {
                 }
             });
             const re = new RegExp(text, 'ig');
-            let spans = document.querySelector('#windowexercise-2 > div > div > div:nth-child(3) > div > div:nth-child(2)')
+            let spans = document.querySelector('#windowexercise-2 > div > div > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(2)')
             if (spans == undefined) {
                 spans = document.querySelector('#windowexercise-2 > div > div > div:nth-child(2) > div')
                 if (spans == undefined) {
@@ -22,9 +22,6 @@ window.onload = function () {
                 }
             }
             for (const element of spans.children) {
-                // if (element.tagName != 'P') {
-                // continue
-                // }
                 const allMatchItr = [...element.innerText.trim().matchAll(re)]
                 let innerElementText = element.outerHTML
                 for (match of allMatchItr) {
