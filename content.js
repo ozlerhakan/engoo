@@ -2,7 +2,7 @@
 
 window.onload = function () {
     const intervalId = setInterval(() => {
-        const vocabularies = document.querySelectorAll("span.css-18tpl2u")
+        const vocabularies = document.querySelectorAll("span.css-l5xv05")
         if (vocabularies && vocabularies.length != 0) {
             clearTimeout(intervalId);
 
@@ -15,11 +15,8 @@ window.onload = function () {
             });
             const re = new RegExp(text, 'ig');
             let spans = document.querySelector('#windowexercise-2 > div > div > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(2)')
-            if (spans == undefined) {
-                spans = document.querySelector('#windowexercise-2 > div > div > div:nth-child(2) > div')
-                if (spans == undefined) {
-                    return;
-                }
+            if (spans === undefined) {
+                return;
             }
             for (const element of spans.children) {
                 const allMatchItr = [...element.innerText.trim().matchAll(re)]
